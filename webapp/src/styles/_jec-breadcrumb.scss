@@ -1,0 +1,42 @@
+.jec-breadcrumb {
+
+  background: $jec-component-background;
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1em;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 1em;
+    height: 1em;
+  }
+
+  i {
+    position: relative;
+    font-size: 1em;
+    width: 0.1em;
+    padding: 0; 
+    top: 0.2em;
+    color: $jec-purple;
+    font-weight: bold;
+  }
+
+  a {
+    color: $jec-purple;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $jec-blue;
+  }
+} 

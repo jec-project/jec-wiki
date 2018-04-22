@@ -2,6 +2,7 @@
 
 $jec-blue: #0a50ff;
 $jec-purple: #7b1fa2;
+$jec-component-background: #F8F8F8;
 
 /* Global Styles */
 
@@ -81,7 +82,7 @@ footer {
 }
 
 .jec-jumbotron {
-  background-color: #F8F8F8;
+  background: $jec-component-background;
   padding: 5em;
   border-radius: 1em;
 }

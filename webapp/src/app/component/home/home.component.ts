@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationService } from '../../service/navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +7,8 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private _router:Router) { }
+  constructor(public navigService:NavigationService) { }
 
   ngOnInit() {
   }
-
-  public navigateTo(route:string):void {
-    this._router.navigateByUrl(route);
-  }
-
 }

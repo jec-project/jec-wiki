@@ -3,6 +3,7 @@
 
 /* JEC Theme */
 @import "styles/_jec-style";
+@import "styles/_jec-breadcrumb";
 
 /* Home component styles */
 @import "styles/_home";
@@ -12,6 +13,9 @@
 
 /* Reference component styles */
 @import "styles/_reference";
+
+/* Wikis component styles */
+@import "styles/_wikis";
 
 /* NotFound component styles */
 @import "styles/_not-found";

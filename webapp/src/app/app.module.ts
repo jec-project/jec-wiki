@@ -17,18 +17,23 @@ import { AppRoutingModule } from './app.routing.module';
 import { HomeComponent } from './component/home/home.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import { DocsComponent } from './component/docs/docs.component';
+import { ReferenceComponent } from './component/reference/reference.component';
+import { WikisComponent } from './component/wikis/wikis.component';
 
 /* App services imports */
 import { JecProjectsService } from './service/jec-projects.service';
-import { ReferenceComponent } from './component/reference/reference.component';
+import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
+import { NavigationService } from './service/navigation.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DocsComponent,
+    WikisComponent,
     ReferenceComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BreadcrumbComponent
   ],
   imports: [
     /* Angular imports */
@@ -45,7 +50,8 @@ import { ReferenceComponent } from './component/reference/reference.component';
     AppRoutingModule
   ],
   providers: [
-    JecProjectsService
+    JecProjectsService,
+    NavigationService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationService } from './service/navigation.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,5 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private _router:Router) { }
-
-  public navigateTo(route:string):void {
-    this._router.navigateByUrl(route);
-  }
+  constructor(public navigService:NavigationService) {}
 }
