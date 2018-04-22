@@ -1,0 +1,137 @@
+/* Colors */
+
+$jec-blue: #0a50ff;
+$jec-purple: #7b1fa2;
+
+/* Global Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2.5em;
+}
+
+header .mat-toolbar {
+  height: 2.5em;
+}
+
+header .mat-toolbar .button-row {
+  width: 100%;
+  display: flex;
+}
+
+.flex-spacer {
+  flex: 1;
+}
+
+.jec-link-button-spacer {
+  width: 1.5em;
+}
+
+.jec-link-button img {
+  height: 2.2em;
+  padding-right: 0.5em
+}
+
+.main-content {
+  position: absolute;
+  top: 2.5em;
+  right: 0;
+  left: 0;
+  bottom: 5em;
+  z-index: -1;
+  padding: 3em 1em;
+  overflow-y: auto;
+}
+
+footer {
+  font: 400 0.8em/0.8em Roboto,"Helvetica Neue",sans-serif;
+  padding: 0.4em;
+  background-color: $jec-purple;
+  color: #fff;
+  height: 5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.footer-version {
+  flex: 1;
+  text-align: center;
+  line-height: 5em;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.jec-jumbotron {
+  background-color: #F8F8F8;
+  padding: 5em;
+  border-radius: 1em;
+}
+
+.jec-jumbotron h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.jec-jumbotron p {
+  font-size: 1.2em;
+}
+
+.mat-card {
+  background: none;
+  color: #333;
+}
+
+.mat-form-field-label {
+  color: #333;
+}
+
+.mat-form-field-underline {
+  background-color: #333;
+}
+
+.footer-logo {
+  height: 100%;
+  display: flex;
+}
+.footer-logo img {
+  width: 5em;
+  margin: 0 1em;
+}
+.footer-logo span {
+  font-weight: bold;
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+.jec-bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-image: url('./assets/img/jec-company-bg.jpg');
+}

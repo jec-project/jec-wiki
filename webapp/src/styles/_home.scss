@@ -1,0 +1,30 @@
+.home-content {
+  text-align: center;
+  display: table;
+  width:100%;
+  height:100%;
+}
+
+.home-content .welcome-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.9);
+}
+.home-content .welcome-wrapper h1 {
+  line-height: 2.5em;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.home-content .welcome-wrapper p {
+  font-size: 1.1em;
+  font-style: italic;
+  margin: -0.5em 0 5em 0;
+}
+
+.home-content .jec-avatar {
+  height: 2.5em;
+  vertical-align: middle;
+}

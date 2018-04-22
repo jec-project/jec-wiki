@@ -1,0 +1,9 @@
+{
+	"webapp": {
+		"name": "jec-wiki",
+    "description": "JavaScript Entreprise Container (JEC) wiki.",
+		"version": "0.0.1",
+		"contextRoot": "jec-wiki",
+		"welcomeFile": "angular/index.html"
+	}
+}

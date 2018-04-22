@@ -1,0 +1,28 @@
+.docs-card {
+  margin: 2em 4em;
+}
+
+.docs-icon-wrapper {
+  width: 4em;
+  height: 4em;
+  float: left;
+  margin-right: 1em;
+}
+
+.docs-icon {
+  font-size: 4em;
+  width: 4em;
+  height: 4em;
+  color: $jec-purple;
+}
+
+.docs-content .mat-card-title {
+  color: $jec-purple;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.docs-content .mat-card-actions {
+  color: $jec-blue;
+}
