@@ -1,0 +1,40 @@
+{
+  "title": "Developer Guide",
+  "id": "developer-guide",
+  "data": [
+    {
+      "label": "Introduction",
+      "data": "introduction"
+    },
+    {
+      "label": "Entreprise JavaScript Projects",
+      "children": [
+        { "label": "Overview", "data": "ejp-overview" },
+        { "label": "Application Structure", "data": "ejp-app-structure" },
+        { "label": "Deployment Descriptor", "data": "ejp-web-json-descriptor" }
+      ] 
+    },
+    {
+      "label": "Developing Web Applications",
+      "children": [
+        { "label": "Overview", "data": "home" },
+        { "label": "Class Loader Mechanism", "data": "home" },
+        { "label": "Using Jslets", "data": "home" }
+      ] 
+    },
+    {
+      "label": "Securing Applications",
+      "children": [
+        { "label": "Overview", "data": "home" }
+      ] 
+    },
+    {
+      "label": "Developing Angular 2 Apps",
+      "children": [
+        { "label": "Overview", "data": "home" },
+        { "label": "Standard Angular Apps", "data": "standard-angular-apps" },
+        { "label": "Angular Server Faces", "data": "angular-server-faces" }
+      ]
+    }
+  ]
+}

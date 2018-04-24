@@ -8,38 +8,7 @@ The official [JavaScript Entreprise Container *(JEC)*][jec-url] wiki.
 
 JEC Wiki needs the following system parameters in order to work correctly:
 
-- Node 6+
-- npm 3+
-- TypeScript 2+
-
-## Installation
-
-Set up the Wiki Wiki module with:
-
-```bash
-$ npm install jec-wiki
-```
-
-## Running Tests
-
-To execute all unit tests, use:
-
-```bash
-$ grunt test
-```
-
-## API Reference
-
-The API Reference documentation is not included into the JEC Wiki node module. To build the API reference documentation, use:
-
-```bash
-$ grunt doc
-```
-
-Documentation will be generated in the `docs/api-reference` repository.
-The online version of the  API reference documentation will be available soon at the JEC Website.
-
-The documentation generator is [TypeDoc](http://typedoc.org/)
+- Angular 5+
 
 ## Update Release Notes
 
