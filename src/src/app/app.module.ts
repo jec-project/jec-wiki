@@ -11,6 +11,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 
+/* Angular tree import */
+import { TreeModule } from 'angular-tree-component';
+
 /* App components imports */
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
@@ -18,11 +21,13 @@ import { HomeComponent } from './component/home/home.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import { DocsComponent } from './component/docs/docs.component';
 import { ReferenceComponent } from './component/reference/reference.component';
-import { WikisComponent } from './component/wikis/wikis.component';
+import { ProjectsComponent } from './component/projects/projects.component';
+
+import { MdViewportComponent } from './component/md-viewport/md-viewport.component';
+import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
 
 /* App services imports */
 import { JecProjectsService } from './service/jec-projects.service';
-import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
 import { NavigationService } from './service/navigation.service';
 
 @NgModule({
@@ -30,23 +35,26 @@ import { NavigationService } from './service/navigation.service';
     AppComponent,
     HomeComponent,
     DocsComponent,
-    WikisComponent,
     ReferenceComponent,
+    ProjectsComponent,
     NotFoundComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    MdViewportComponent
   ],
   imports: [
-    /* Angular imports */
+    /* Angular Module */
     BrowserAnimationsModule,
     RouterModule,
-    /* Angular material imports */
+    /* Angular Material Module */
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
     MatIconModule,
     MatGridListModule,
     MatCardModule,
-    /* Routing imports */
+    /* Angular Tree Module */
+    TreeModule,
+    /* Routing Module */
     AppRoutingModule
   ],
   providers: [

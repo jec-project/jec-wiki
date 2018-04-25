@@ -1,6 +1,9 @@
 /* Angular Material Theme */
 @import "~@angular/material/prebuilt-themes/purple-green.css";
 
+/* Angular Tree Component Theme */
+@import '~angular-tree-component/dist/angular-tree-component.css';
+
 /* JEC Theme */
 @import "styles/_jec-style";
 @import "styles/_jec-breadcrumb";
@@ -14,8 +17,8 @@
 /* Reference component styles */
 @import "styles/_reference";
 
-/* Wikis component styles */
-@import "styles/_wikis";
+/* Projects component styles */
+@import "styles/_projects";
 
 /* NotFound component styles */
 @import "styles/_not-found";

@@ -1,31 +1,66 @@
-.reference-content .projects-table {
-  width: 90%;
-  margin: 2em 5em;
-  border: 1px solid $jec-purple;
+.reference-content {
+    width: 100%;
+    height: 100%;
 }
 
-.reference-content .projects-table-header {
-  padding: 0.8em 1em 0 1em;
-  background-color: $jec-purple;
-  color: #fff;
+/* Tree component styles */
+.tree-component-wrapper {
+    background: $jec-component-background;
+    position: absolute;
+    width: 13em;
+    top: 7.5em;
+    bottom: 1.5em;
+    border-radius: 1em;
+    padding: 1em;
 }
 
-.reference-content .projects-table-body {
-  margin: 1em 0;
+.node-content-wrapper, .tree-children {
+    position: relative;
 }
 
-.reference-content .projects-table-header .mat-form-field-label {
-  color: #fff;
-}
-.reference-content .projects-table-header .mat-form-field-underline {
-  background-color: #fff;
+.node-content-wrapper::before, .tree-children::after {
+    content: "";
+    position: absolute;
 }
 
-.reference-content .projects-table-header .mat-input-element {
-  caret-color: #fff;
+.node-content-wrapper::before {
+    border-bottom: 1px dotted lightgrey;
+    border-left: 1px dotted lightgrey;
+    height: 28px;
+    top: -17px;
+    width: 20px;
+    left: -28px;
 }
 
-.reference-content .mat-grid-tile .mat-figure {
-  justify-content: left;
-  margin: 0 2em;
+.tree-node-level-1 > tree-node-wrapper > .node-wrapper > .node-content-wrapper::before {
+    display: none;
+}
+
+.tree-node-leaf > .node-wrapper > .node-content-wrapper::before {
+    width: 25px;
+}
+
+.tree-children::after {
+    border-left: 1px dotted lightgrey;
+    height: 100%;
+    top: -15px;
+    left: -15px;
+}
+
+tree-node:last-child > .tree-node > .tree-children::after {
+    border-left: none;
+}
+
+.toggle-children {
+    z-index: 1;
+}
+
+/* MdViewport component */
+.jec-md-viewport {
+    border: 1px solid black;
+    position: absolute;
+    left: 17em;
+    top: 7.5em;
+    bottom: 1.5em;
+    right: 1em;
 }

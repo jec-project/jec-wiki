@@ -1,33 +1,10 @@
 <div class="reference-content">
 
-    <div class="jec-jumbotron">
-        <h1>
-            Reference
-        </h1>
-        <p>
-            Here you'll find quick access to API and reference documentation for all JEC projects.
-        </p>
-    </div>
+  <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
 
-    <div class="projects-table">
-        <div class="projects-table-header">
-            <form class="example-form">
-                <mat-form-field class="example-full-width">
-                    <input type="search" matInput placeholder="Find a project..." />
-                    <mat-icon matSuffix>search</mat-icon>
-                </mat-form-field>
-            </form>
-        </div>
-        <div class="projects-table-body">
-            <mat-grid-list cols="3" rowHeight="3em">
-                <mat-grid-tile *ngFor="let project of projects">
-                    <div class="project-label">{{project.label}}</div>
-                    <div class="flex-spacer">&nbsp;</div>
-                    <div>
-                        <i class="material-icons">info_outline</i>
-                    </div>
-                </mat-grid-tile>
-            </mat-grid-list>
-        </div>
-    </div>
+  <div class="tree-component-wrapper mat-elevation-z2">
+    <tree-root [nodes]="treeData" [options]="treeOptions"></tree-root>
+  </div>
+  
+  <jec-md-viewport></jec-md-viewport>
 </div>

@@ -1,0 +1,31 @@
+.reference-content .projects-table {
+  width: 90%;
+  margin: 2em 5em;
+  border: 1px solid $jec-purple;
+}
+
+.reference-content .projects-table-header {
+  padding: 0.8em 1em 0 1em;
+  background-color: $jec-purple;
+  color: #fff;
+}
+
+.reference-content .projects-table-body {
+  margin: 1em 0;
+}
+
+.reference-content .projects-table-header .mat-form-field-label {
+  color: #fff;
+}
+.reference-content .projects-table-header .mat-form-field-underline {
+  background-color: #fff;
+}
+
+.reference-content .projects-table-header .mat-input-element {
+  caret-color: #fff;
+}
+
+.reference-content .mat-grid-tile .mat-figure {
+  justify-content: left;
+  margin: 0 2em;
+}

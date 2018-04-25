@@ -4,7 +4,7 @@ import { HomeComponent } from "./component/home/home.component";
 import { NotFoundComponent } from "./component/not-found/not-found.component";
 import { DocsComponent } from "./component/docs/docs.component";
 import { ReferenceComponent } from "./component/reference/reference.component";
-import { WikisComponent } from "./component/wikis/wikis.component";
+import { ProjectsComponent } from "./component/projects/projects.component";
 
 @NgModule({
   imports: [
@@ -12,8 +12,8 @@ import { WikisComponent } from "./component/wikis/wikis.component";
       { path: "", component: HomeComponent },
       { path: "home", component: HomeComponent },
       { path: "docs", component: DocsComponent },
-      { path: "docs/wikis", component: WikisComponent },
       { path: "docs/reference", component: ReferenceComponent },
+      { path: "docs/projects", component: ProjectsComponent },
       { path: "**", component: NotFoundComponent }
     ])
   ],
