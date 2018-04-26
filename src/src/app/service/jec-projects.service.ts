@@ -7,7 +7,7 @@ export class JecProjectsService {
 
   constructor() { }
 
-  public getProjects(): Observable<any> {
+  public getData(): Observable<any> {
     const result:any = {
       projects: [
         { label: "jec-wiki" },

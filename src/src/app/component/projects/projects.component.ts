@@ -12,7 +12,7 @@ export class ProjectsComponent implements OnInit {
   public projects:any[] = null;
 
   public ngOnInit():void {
-    this._jecProjectsService.getProjects().subscribe(result => {
+    this._jecProjectsService.getData().subscribe(result => {
       this.projects = result.projects;
     });
   }

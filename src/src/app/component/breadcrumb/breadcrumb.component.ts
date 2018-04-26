@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { JecProjectsService } from '../../service/jec-projects.service';
 import { RouteItem } from './route-item.interface';
 
 @Component({

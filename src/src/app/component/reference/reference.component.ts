@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { RouteItem } from '../breadcrumb/route-item.interface';
-import { NavigationService } from '../../service/navigation.service';
+import { Component, OnInit } from "@angular/core";
+import { RouteItem } from "../breadcrumb/route-item.interface";
+import { NavigationService } from "../../service/navigation.service";
+import { JecReferenceMenuService } from "../../service/jec-reference-menu.service";
 
 @Component({
-  selector: 'app-reference',
-  templateUrl: './reference.component.html'
+  selector: "app-reference",
+  templateUrl: "./reference.component.html"
 })
 export class ReferenceComponent implements OnInit {
-
-  constructor(public navigService: NavigationService) { }
+  constructor(
+    public navigService: NavigationService,
+    private _referenceMenuService: JecReferenceMenuService
+  ) {}
 
   public routeList: RouteItem[] = null;
 
@@ -16,41 +19,24 @@ export class ReferenceComponent implements OnInit {
 
   public treeOptions: any = {};
 
+  public mdFileRef: string = null;
+
   public ngOnInit(): void {
     this.routeList = [
       { label: "Home", route: "home" },
       { label: "Documentation", route: "docs" },
       { label: "Reference", route: "docs/reference" }
     ];
-
-    this.treeData = [
-      {
-        id: 1,
-        name: 'root1',
-        children: [
-          { id: 2, name: 'child1' },
-          { id: 3, name: 'child2' }
-        ]
-      },
-      {
-        id: 4,
-        name: 'root2',
-        children: [
-          { id: 5, name: 'child2.1' },
-          {
-            id: 6,
-            name: 'child2.2',
-            children: [
-              { id: 7, name: 'subsub' }
-            ]
-          }
-        ]
-      }
-    ];
+    this._referenceMenuService.getData().subscribe(result => {
+      this.treeData = result;
+    });
   }
 
   public breadcrumbChangeHandler(routeItem: RouteItem): void {
     this.navigService.navigateTo(routeItem.route);
   }
 
+  public onActivate(event: any): void {
+    this.mdFileRef = event.node.data.file;
+  }
 }
