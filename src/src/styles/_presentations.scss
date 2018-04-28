@@ -45,13 +45,3 @@
 .tech-links li {
     list-style: none;
 }
-
-.tech-links a {
-    color: $jec-purple;
-    text-decoration: none;
-    border-bottom: 2px solid $jec-component-background;
-}
-
-.tech-links a:hover {
-    border-bottom: 2px solid $jec-purple;
-}

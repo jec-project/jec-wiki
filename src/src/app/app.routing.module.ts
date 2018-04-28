@@ -6,6 +6,7 @@ import { DocsComponent } from "./component/docs/docs.component";
 import { ReferenceComponent } from "./component/reference/reference.component";
 import { ProjectsComponent } from "./component/projects/projects.component";
 import { PresentationsComponent } from "./component/presentations/presentations.component";
+import { VideosComponent } from "./component/videos/videos.component";
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { PresentationsComponent } from "./component/presentations/presentations.
       { path: "docs", component: DocsComponent },
       { path: "docs/reference", component: ReferenceComponent },
       { path: "docs/presentations", component: PresentationsComponent },
+      { path: "docs/videos", component: VideosComponent },
       { path: "docs/projects", component: ProjectsComponent },
       { path: "**", component: NotFoundComponent }
     ])

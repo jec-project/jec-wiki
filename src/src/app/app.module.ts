@@ -34,6 +34,7 @@ import { JecProjectsService } from "./service/jec-projects.service";
 import { NavigationService } from "./service/navigation.service";
 import { JecReferenceMenuService } from "./service/jec-reference-menu.service";
 import { JecMarkdownService } from "./service/jec-markdown.service";
+import { VideosComponent } from "./component/videos/videos.component";
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { JecMarkdownService } from "./service/jec-markdown.service";
     NotFoundComponent,
     BreadcrumbComponent,
     MdViewportComponent,
-    PresentationsComponent
+    PresentationsComponent,
+    VideosComponent
   ],
   imports: [
     /* Angular Module */

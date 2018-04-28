@@ -11,12 +11,9 @@
     </p>
   </div>
 
-  <div>&nbsp;</div>
-
   <h2>Presentations</h2>
 
-  <div class="presentations-card-container" fxLayout="row wrap" fxLayout.xs="column" 
-                                            fxLayoutAlign="center top">
+  <div class="presentations-card-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center top">
     <mat-card *ngFor="let pres of presentations" class="presentations-card" fxFlex="20">
       <mat-card-header>
         <mat-card-title class="presentations-card-header-title">{{pres.title}}</mat-card-title>
@@ -37,7 +34,7 @@
 
   <ul class="tech-links">
     <li class="jec-badge mat-elevation-z2">
-      <a href="https://dzone.com/articles/juta-javascript-unit-testing-api"
+      <a class="jec-link" href="https://dzone.com/articles/juta-javascript-unit-testing-api"
          title="JUTA: JavaScript Unit Testing API">
          JUTA: JavaScript Unit Testing API <em>(dzone.com)</em>
       </a>

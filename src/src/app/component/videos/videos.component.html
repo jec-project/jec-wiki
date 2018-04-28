@@ -1,0 +1,37 @@
+<div class="videos-content">
+
+  <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
+
+  <div class="jec-jumbotron mat-elevation-z2">
+    <h1>
+      Videos
+    </h1>
+    <p>
+      The purpose of this video series is to get you started quickly with JEC without you having to go through lengthy reference manuals.
+      At the end of these video tutorials, you’ll be able to create and deploy microservices and Web apps with JEC and the GlassCat server.
+    </p>
+    <p>
+      <img class="youtube-logo" src="./assets/img/youtube-logo.svg"/>
+      For more Video resources, pleas visit the official
+      <a class="jec-link" href="https://www.youtube.com/channel/UCA2Z3RDl6NET9qRH-HbNktQ"
+         title="JEC Youtube Channel">
+        JEC Youtube Channel.
+      </a>
+    </p>
+  </div>
+
+  <div class="videos-card-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center top">
+    <mat-card *ngFor="let video of videos" class="videos-card" fxFlex="40">
+      <mat-card-header>
+        <mat-card-title class="videos-card-header-title">{{video.title}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <iframe [src]="getVideoUrl(video.url)" frameborder="0" allowfullscreen>
+        </iframe>
+        <p class="videos-card-description">
+          {{video.description}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

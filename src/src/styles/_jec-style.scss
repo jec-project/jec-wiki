@@ -142,3 +142,13 @@ footer {
   padding: 1em;
   border-radius: 0.5em; 
 }
+
+.jec-link {
+  color: $jec-purple;
+  text-decoration: none;
+  border-bottom: 2px solid $jec-component-background;
+}
+
+.jec-link:hover {
+  border-bottom: 2px solid $jec-purple;
+}

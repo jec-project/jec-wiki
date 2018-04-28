@@ -1,0 +1,44 @@
+.videos-content {
+    width: 100%;
+    height: 100%;
+}
+
+.videos-card-container {
+    width: 100%;
+    margin-top: 2em
+}
+
+.videos-card {
+    margin: 1em;
+}
+.videos-card img {
+    border: 1px solid $jec-blue;
+    width: 100%;
+}
+
+.videos-card-container .mat-card-header-text {
+    width: 100%;
+}
+
+.videos-card-container .mat-card-title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: $jec-purple;
+    font-size: 1.2em;
+}
+
+.videos-card-container .mat-card-content iframe {
+    width: 100%;
+    min-height: 20em;
+}
+
+.videos-card-container .videos-card-description {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.videos-content .youtube-logo {
+    width: 2em;
+}
