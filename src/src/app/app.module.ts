@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 /* Angular material imports */
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -23,7 +24,8 @@ import { NotFoundComponent } from "./component/not-found/not-found.component";
 import { DocsComponent } from "./component/docs/docs.component";
 import { ReferenceComponent } from "./component/reference/reference.component";
 import { ProjectsComponent } from "./component/projects/projects.component";
-
+import { AbstractViewComponent } from "./component/core/abstract-view.component";
+import { PresentationsComponent } from "./component/presentations/presentations.component";
 import { MdViewportComponent } from "./component/md-viewport/md-viewport.component";
 import { BreadcrumbComponent } from "./component/breadcrumb/breadcrumb.component";
 
@@ -32,7 +34,6 @@ import { JecProjectsService } from "./service/jec-projects.service";
 import { NavigationService } from "./service/navigation.service";
 import { JecReferenceMenuService } from "./service/jec-reference-menu.service";
 import { JecMarkdownService } from "./service/jec-markdown.service";
-import { AbstractViewComponent } from "./component/core/abstract-view.component";
 
 @NgModule({
   declarations: [
@@ -43,13 +44,15 @@ import { AbstractViewComponent } from "./component/core/abstract-view.component"
     ProjectsComponent,
     NotFoundComponent,
     BreadcrumbComponent,
-    MdViewportComponent
+    MdViewportComponent,
+    PresentationsComponent
   ],
   imports: [
     /* Angular Module */
     BrowserAnimationsModule,
     RouterModule,
     HttpClientModule,
+    FlexLayoutModule,
     /* Angular Material Module */
     MatToolbarModule,
     MatButtonModule,

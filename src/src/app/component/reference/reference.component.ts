@@ -9,12 +9,12 @@ import { TreeComponent } from "angular-tree-component";
   templateUrl: "./reference.component.html"
 })
 export class ReferenceComponent extends AbstractViewComponent {
-  constructor(
-    public navigService: NavigationService,
-    private _referenceMenuService: JecReferenceMenuService
-  ) {
+
+  constructor(navigService: NavigationService,
+              private _referenceMenuService: JecReferenceMenuService) {
     super(navigService);
   }
+  
 
   @ViewChild("navTree") public navTree: TreeComponent;
 

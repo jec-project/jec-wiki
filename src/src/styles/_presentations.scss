@@ -1,0 +1,57 @@
+.presentations-content {
+    width: 100%;
+    height: 100%;
+}
+
+.presentations-content h2 {
+    margin: 2em 0 1em 0;
+}
+
+.presentations-card-container {
+    width: 100%;
+}
+
+.presentations-card {
+    margin: 1em;
+}
+.presentations-card img {
+    border: 1px solid $jec-blue;
+    width: 100%;
+}
+
+.presentations-card-container .mat-card-header-text {
+    width: 100%;
+}
+
+.presentations-card-container .mat-card-title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: $jec-purple;
+    font-size: 1.2em;
+}
+
+.presentations-card-container .mat-card-actions {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.tech-links {
+    margin-bottom: 3em;
+}
+
+.tech-links li {
+    list-style: none;
+}
+
+.tech-links a {
+    color: $jec-purple;
+    text-decoration: none;
+    border-bottom: 2px solid $jec-component-background;
+}
+
+.tech-links a:hover {
+    border-bottom: 2px solid $jec-purple;
+}

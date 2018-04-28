@@ -136,3 +136,9 @@ footer {
   background-size:  cover;
   background-image: url('./assets/img/jec-company-bg.jpg');
 }
+
+.jec-badge {
+  background-color: $jec-component-background;
+  padding: 1em;
+  border-radius: 0.5em; 
+}
