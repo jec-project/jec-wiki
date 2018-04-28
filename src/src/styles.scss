@@ -4,8 +4,6 @@
 /* Angular Tree Component Theme */
 @import '~angular-tree-component/dist/angular-tree-component.css';
 
-@import '~styles/github-markdown.css';
-
 /* JEC Theme */
 @import "styles/_jec-style";
 @import "styles/_jec-breadcrumb";
@@ -24,3 +22,6 @@
 
 /* NotFound component styles */
 @import "styles/_not-found";
+
+/* Markdown Theme */
+@import '~styles/_github-markdown.scss';

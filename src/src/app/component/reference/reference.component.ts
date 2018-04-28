@@ -1,19 +1,22 @@
-import { Component, OnInit } from "@angular/core";
-import { RouteItem } from "../breadcrumb/route-item.interface";
+import { Component, ViewChild } from "@angular/core";
 import { NavigationService } from "../../service/navigation.service";
 import { JecReferenceMenuService } from "../../service/jec-reference-menu.service";
+import { AbstractViewComponent } from "../core/abstract-view.component";
+import { TreeComponent } from "angular-tree-component";
 
 @Component({
   selector: "app-reference",
   templateUrl: "./reference.component.html"
 })
-export class ReferenceComponent implements OnInit {
+export class ReferenceComponent extends AbstractViewComponent {
   constructor(
     public navigService: NavigationService,
     private _referenceMenuService: JecReferenceMenuService
-  ) {}
+  ) {
+    super(navigService);
+  }
 
-  public routeList: RouteItem[] = null;
+  @ViewChild("navTree") public navTree: TreeComponent;
 
   public treeData: any[] = null;
 
@@ -29,11 +32,10 @@ export class ReferenceComponent implements OnInit {
     ];
     this._referenceMenuService.getData().subscribe(result => {
       this.treeData = result;
+      setTimeout(()=> {
+        this.navTree.treeModel.getNodeById("1").toggleActivated().toggleExpanded();
+      }, 0);
     });
-  }
-
-  public breadcrumbChangeHandler(routeItem: RouteItem): void {
-    this.navigService.navigateTo(routeItem.route);
   }
 
   public onActivate(event: any): void {

@@ -1,9 +1,9 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { RouteItem } from './route-item.interface';
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { RouteItem } from "./route-item.interface";
 
 @Component({
-  selector: 'jec-breadcrumb',
-  templateUrl: './breadcrumb.component.html'
+  selector: "jec-breadcrumb",
+  templateUrl: "./breadcrumb.component.html"
 })
 export class BreadcrumbComponent implements OnInit {
 

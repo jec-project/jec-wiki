@@ -11,15 +11,19 @@ export class MdViewportComponent implements OnInit {
   @Input() public set reference(value: string) {
     if(value) {
       const mdFilePath: string = `assets/resources/wiki/pages/${value}.md`;
-      this._http.get(mdFilePath, { responseType: 'text' }).subscribe(result => {
-        this.textContent = this._markdown.process(result);
+      this._http.get(mdFilePath, MdViewportComponent.RESPONS_TYPE).subscribe(result => {
+        this.textContent = this._markdown.process(result.toString());
       });
     } else {
-      this.textContent = null;
+      this.textContent = MdViewportComponent.EMPTY_CONTENT;
     }
   }
   
-  public textContent:string = null;
+  public textContent:string = MdViewportComponent.EMPTY_CONTENT;
+
+  private static readonly RESPONS_TYPE: any = { responseType: "text" };
+
+  private static readonly EMPTY_CONTENT: any = "";
 
   constructor(private _http: HttpClient,
               private _markdown: JecMarkdownService) { }

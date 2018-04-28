@@ -1,9 +1,14 @@
-# What Is GlassCat?
+# JavaScript Entreprise Container *(JEC)* Project
 
-![GlassCat Server](../../../styles/assets/glasscat.png =150x150 "GlassCat Server")
+JavaScript Entreprise Container *(JEC)* is the standard in modern JavaScript enterprise software.
 
-GlassCat is a **Web Applications Server** which provides advanced
-functionalities for creating, building and deploying scalable JavaScript
-applications.
+![JavaScript Entreprise Container (JEC) Project][jec-logo]
 
-## A complete client/server solution
+JEC provides an easy-to-use infrastructure to TypeScript and JavaScript developers, with the following advantages:
+- a standardized development environment
+- an efficient alternative to Spring Boot and Java EE
+- an integrated solution for modern Web development
+- an effective solution for JavaScript apps scalability 
+- an isomorphic approach for building microservices and Angular apps
+
+[jec-logo]: https://raw.githubusercontent.com/pechemann/JEC/master/assets/jec-logos/jec-logo.png?style=jec-main-logo

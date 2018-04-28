@@ -3,7 +3,7 @@
   <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
 
   <div class="tree-component-wrapper mat-elevation-z2">
-    <tree-root [nodes]="treeData" [options]="treeOptions" (activate)="onActivate($event)"></tree-root>
+    <tree-root #navTree [nodes]="treeData" [options]="treeOptions" (activate)="onActivate($event)"></tree-root>
   </div>
   
   <jec-md-viewport [reference]="mdFileRef"></jec-md-viewport>

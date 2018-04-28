@@ -32,6 +32,7 @@ import { JecProjectsService } from "./service/jec-projects.service";
 import { NavigationService } from "./service/navigation.service";
 import { JecReferenceMenuService } from "./service/jec-reference-menu.service";
 import { JecMarkdownService } from "./service/jec-markdown.service";
+import { AbstractViewComponent } from "./component/core/abstract-view.component";
 
 @NgModule({
   declarations: [
