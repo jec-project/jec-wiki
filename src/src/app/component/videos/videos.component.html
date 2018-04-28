@@ -20,7 +20,8 @@
     </p>
   </div>
 
-  <div class="videos-card-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center top">
+  <div #viewport class="videos-card-container"
+       fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center top">
     <mat-card *ngFor="let video of videos" class="videos-card" fxFlex="40">
       <mat-card-header>
         <mat-card-title class="videos-card-header-title">{{video.title}}</mat-card-title>

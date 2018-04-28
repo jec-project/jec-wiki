@@ -13,7 +13,8 @@
 
   <h2>Presentations</h2>
 
-  <div class="presentations-card-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center top">
+  <div #viewport class="presentations-card-container"
+       fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center top">
     <mat-card *ngFor="let pres of presentations" class="presentations-card" fxFlex="20">
       <mat-card-header>
         <mat-card-title class="presentations-card-header-title">{{pres.title}}</mat-card-title>

@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild, ElementRef } from "@angular/core";
 import { NavigationService } from "../../service/navigation.service";
 import { AbstractViewComponent } from "../core/abstract-view.component";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
@@ -10,6 +10,8 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 export class VideosComponent extends AbstractViewComponent {
 
   public videos: any[] = null;
+
+  @ViewChild("viewport") viewport:ElementRef;
 
   constructor(navigService: NavigationService,
               private _sanitizer: DomSanitizer) {
@@ -35,6 +37,10 @@ export class VideosComponent extends AbstractViewComponent {
         description: "This video shows how you can create a fully testable RESTful microservice application in less than 3 minutes."
       }
     ];
+  }
+
+  public ngAfterViewInit(): void {
+    this.viewport.nativeElement.style.maxHeight = "unset";
   }
 
   public getVideoUrl(url: string): SafeResourceUrl {

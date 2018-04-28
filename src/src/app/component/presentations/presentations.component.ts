@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
 import { NavigationService } from "../../service/navigation.service";
 import { AbstractViewComponent } from "../core/abstract-view.component";
 
@@ -6,9 +6,11 @@ import { AbstractViewComponent } from "../core/abstract-view.component";
   selector: "app-presentations",
   templateUrl: "./presentations.component.html"
 })
-export class PresentationsComponent extends AbstractViewComponent {
+export class PresentationsComponent extends AbstractViewComponent implements AfterViewInit {
 
   public presentations: any[] = null;
+
+  @ViewChild("viewport") viewport:ElementRef;
 
   constructor(navigService: NavigationService) {
     super(navigService);
@@ -31,6 +33,10 @@ export class PresentationsComponent extends AbstractViewComponent {
       { title: "App Sample", img: "jec-modular-app-sample-thumb", pdf: "jec-modular-app-sample" },
       { title: "Understanding Angular GPM", img: "jec-angular-gpm-thumb", pdf: "jec-understanding-angular-gpm" }
     ];
+  }
+
+  public ngAfterViewInit(): void {
+    this.viewport.nativeElement.style.maxHeight = "unset";
   }
 
   public downloadPdf(item: string): void {
