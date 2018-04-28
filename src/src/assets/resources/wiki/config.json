@@ -1,38 +1,39 @@
 {
-  "data": [
+  "data": 
+  [
     {
-      "label": "Introduction",
-      "data": "introduction"
-    },
-    {
-      "label": "Entreprise JavaScript Projects",
+      "id": "1",
+      "name": "JEC Overview", "file":"jec-overview",
       "children": [
-        { "label": "Overview", "data": "ejp-overview" },
-        { "label": "Application Structure", "data": "ejp-app-structure" },
-        { "label": "Deployment Descriptor", "data": "ejp-web-json-descriptor" }
-      ] 
-    },
-    {
-      "label": "Developing Web Applications",
-      "children": [
-        { "label": "Overview", "data": "home" },
-        { "label": "Class Loader Mechanism", "data": "home" },
-        { "label": "Using Jslets", "data": "home" }
-      ] 
-    },
-    {
-      "label": "Securing Applications",
-      "children": [
-        { "label": "Overview", "data": "home" }
-      ] 
-    },
-    {
-      "label": "Developing Angular 2 Apps",
-      "children": [
-        { "label": "Overview", "data": "home" },
-        { "label": "Standard Angular Apps", "data": "standard-angular-apps" },
-        { "label": "Angular Server Faces", "data": "angular-server-faces" }
+        { "id": "1.1", "name": "About these Docs", "file":"about-jec-documentation" },
+        { "id": "1.2", "name": "List of JEC Projects Repositories" },
+        { "id": "1.3", "name": "JEC Publications",
+          "children": [
+            { "id": "1.31", "name": "Presentations" },
+            { "id": "1.32", "name": "Articles" },
+            { "id": "1.33", "name": "Communication Kit" }
+          ]
+        },
+        { "id": "1.1000", "name": "Roadmap",
+          "children": [
+            { "id": "1.1001", "name": "Projects Progress" },
+            { "id": "1.1002", "name": "JEC Projects TODOS" }
+          ]
+        }
       ]
+    },
+    {
+      "id": "2",
+      "name": "JEC APIs",
+      "children": [
+        { "id": "2.1", "name": "Jslets" },
+        { "id": "2.2", "name": "JARS" },
+        { "id": "2.3", "name": "JDI" },
+        { "id": "2.4", "name": "JUTA" }
+      ]
+    },
+    {
+      "id": "3", "name": "GlassCat Server", "file": "glasscat-server"
     }
   ]
 }

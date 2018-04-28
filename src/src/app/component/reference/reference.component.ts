@@ -31,7 +31,7 @@ export class ReferenceComponent extends AbstractViewComponent {
       { label: "Reference", route: "docs/reference" }
     ];
     this._referenceMenuService.getData().subscribe(result => {
-      this.treeData = result;
+      this.treeData = result.data;
       setTimeout(()=> {
         this.navTree.treeModel.getNodeById("1").toggleActivated().toggleExpanded();
       }, 0);
