@@ -35,6 +35,7 @@ import { NavigationService } from "./service/navigation.service";
 import { JecReferenceMenuService } from "./service/jec-reference-menu.service";
 import { JecMarkdownService } from "./service/jec-markdown.service";
 import { VideosComponent } from "./component/videos/videos.component";
+import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { VideosComponent } from "./component/videos/videos.component";
     BreadcrumbComponent,
     MdViewportComponent,
     PresentationsComponent,
-    VideosComponent
+    VideosComponent,
+    CommunicationKitComponent
   ],
   imports: [
     /* Angular Module */

@@ -24,10 +24,13 @@
 @import "styles/_not-found";
 
 /* Markdown Theme */
-@import '~styles/_github-markdown.scss';
+@import '~styles/_github-markdown';
 
 /* Presentations component styles */
 @import "styles/_presentations";
 
 /* Videos component styles */
 @import "styles/_videos";
+
+/* Communication Kit component styles */
+@import "styles/_communication-kit";

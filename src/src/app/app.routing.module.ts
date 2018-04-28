@@ -7,6 +7,7 @@ import { ReferenceComponent } from "./component/reference/reference.component";
 import { ProjectsComponent } from "./component/projects/projects.component";
 import { PresentationsComponent } from "./component/presentations/presentations.component";
 import { VideosComponent } from "./component/videos/videos.component";
+import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { VideosComponent } from "./component/videos/videos.component";
       { path: "docs/reference", component: ReferenceComponent },
       { path: "docs/presentations", component: PresentationsComponent },
       { path: "docs/videos", component: VideosComponent },
+      { path: "docs/communication-kit", component: CommunicationKitComponent },
       { path: "docs/projects", component: ProjectsComponent },
       { path: "**", component: NotFoundComponent }
     ])
