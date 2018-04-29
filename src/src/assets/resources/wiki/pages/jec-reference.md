@@ -1,8 +1,8 @@
-# JavaScript Entreprise Container *(JEC)* Project
+# JavaScript Enterprise Container *(JEC)* Project
 
-JavaScript Entreprise Container *(JEC)* is the standard in modern JavaScript enterprise software.
+JavaScript Enterprise Container *(JEC)* is the standard in modern JavaScript enterprise software.
 
-![JavaScript Entreprise Container (JEC) Project][jec-logo]
+![JavaScript Enterprise Container (JEC) Project][jec-logo]
 
 JEC provides an easy-to-use infrastructure to TypeScript and JavaScript developers, with the following advantages:
 - a standardized development environment

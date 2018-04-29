@@ -1,6 +1,6 @@
 # JEC Wiki Project
 
-The official [JavaScript Entreprise Container *(JEC)*][jec-url] wiki.
+The official [JavaScript Enterprise Container *(JEC)*][jec-url] wiki.
 
 [![][jec-logo]][jec-url]
 
