@@ -16,7 +16,7 @@ JEC decorators are modern alternatives for JSON descriptors.
 * JavaScript API for RESTful Services _(JARS)_
 
 ### Unit Testing Metadata
-* [JavaScript Unit Testing API _(JUTA)_](https://github.com/pechemann/jec-juta/wiki)
+* [JavaScript Unit Testing API _(JUTA)_](http://jecproject.org/wiki)
 
 ## @Bootstrap Decorator
 
