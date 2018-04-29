@@ -32,7 +32,13 @@
     font-size: 1.2em;
 }
 
-.communication-kit-card-container .communication-kit-card-description {
-    font-size: 1.2em;
-    margin-top: 1em;
+.communication-kit-card-container .logo-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.communication-kit-card-container .logo-btn div {
+    float: right;
+    color: $jec-blue;
 }

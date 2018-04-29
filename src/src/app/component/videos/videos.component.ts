@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from "@angular/core";
+import { Component, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
 import { NavigationService } from "../../service/navigation.service";
 import { AbstractViewComponent } from "../core/abstract-view.component";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
@@ -7,7 +7,7 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
   selector: "app-videos",
   templateUrl: "./videos.component.html"
 })
-export class VideosComponent extends AbstractViewComponent {
+export class VideosComponent extends AbstractViewComponent implements AfterViewInit {
 
   public videos: any[] = null;
 

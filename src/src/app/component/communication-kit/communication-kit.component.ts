@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
+import { Component } from "@angular/core";
 import { NavigationService } from "../../service/navigation.service";
 import { AbstractViewComponent } from "../core/abstract-view.component";
 
@@ -6,9 +6,7 @@ import { AbstractViewComponent } from "../core/abstract-view.component";
   selector: "app-communication-kit",
   templateUrl: "./communication-kit.component.html"
 })
-export class CommunicationKitComponent extends AbstractViewComponent implements AfterViewInit {
-
-  @ViewChild("viewport") viewport:ElementRef;
+export class CommunicationKitComponent extends AbstractViewComponent {
 
   constructor(navigService: NavigationService) {
     super(navigService);
@@ -20,10 +18,6 @@ export class CommunicationKitComponent extends AbstractViewComponent implements 
       { label: "Documentation", route: "docs" },
       { label: "Communication Kit", route: "docs/communication-kit" }
     ];
-  }
-
-  public ngAfterViewInit(): void {
-    this.viewport.nativeElement.style.maxHeight = "unset";
   }
 
   public downloadItem(item: string): void {
