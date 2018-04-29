@@ -6,6 +6,7 @@ The following projects are parts of the JEC specifications:
 
 - **[JEC](https://github.com/pechemann/JEC)**: solely contains presentation documents related to the JEC project.
 - **[jec-cli](https://github.com/pechemann/jec-cli)**: CLI tool for managing JEC projects.
+- **[jec-cli-template](https://github.com/pechemann/jec-cli)**: Provides functionalities for creating JEC components from a Command Line Interface.
 - **[jec-commons](https://github.com/pechemann/jec-commons)**: contains common dependencies shared by JEC implementations.
 - **[jec-commons-node](https://github.com/pechemann/jec-commons)**: contains common dependencies shared by JEC implementations built on top of [Node.js](https://nodejs.org/en/).
 - **[jec-exchange](https://github.com/pechemann/jec-exchange)**: contains jslet and security layers dependencies.
