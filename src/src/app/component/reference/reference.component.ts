@@ -82,7 +82,10 @@ export class ReferenceComponent extends AbstractViewComponent {
     const item: any = this._treeDataMap.get(pageRef);
     if(item) {
       this.setMdFileRef(item.file);
-      this.navTree.treeModel.getNodeById(item.id).toggleActivated().toggleExpanded();
+      this.navTree.treeModel.getNodeById(item.id)
+                            .toggleActivated()
+                            .toggleExpanded()
+                            .ensureVisible();
     } else {
       this._navigService.navigateTo("/not-found");
     }
