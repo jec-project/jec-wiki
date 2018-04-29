@@ -15,11 +15,15 @@ import { CommunicationKitComponent } from "./component/communication-kit/communi
       { path: "", component: HomeComponent },
       { path: "home", component: HomeComponent },
       { path: "docs", component: DocsComponent },
-      { path: "docs/reference", component: ReferenceComponent },
+      { path: "docs/reference", component: ReferenceComponent,
+      children: [
+        {path: '**', component: ReferenceComponent}
+      ] },
       { path: "docs/presentations", component: PresentationsComponent },
       { path: "docs/videos", component: VideosComponent },
       { path: "docs/communication-kit", component: CommunicationKitComponent },
       { path: "docs/projects", component: ProjectsComponent },
+      { path: "not-found", component: NotFoundComponent },
       { path: "**", component: NotFoundComponent }
     ])
   ],

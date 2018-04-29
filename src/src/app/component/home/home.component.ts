@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { NavigationService } from '../../service/navigation.service';
+import { Component, OnInit } from "@angular/core";
+import { NavigationService } from "../../service/navigation.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html'
+  selector: "app-home",
+  templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
 
