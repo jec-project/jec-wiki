@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import * as MarkdownIt from "markdown-it";
+import * as hljs  from "highlight.js";
 
 @Injectable()
 export class JecMarkdownService {
@@ -12,7 +13,14 @@ export class JecMarkdownService {
 
   private init(): void {
     this._markdownIt = MarkdownIt().set({
-      html: false
+      highlight: (str: string, lang: string) => {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value;
+          } catch (e) {}
+        }
+        return ""; // use external default escaping
+      }
     });
   }
 

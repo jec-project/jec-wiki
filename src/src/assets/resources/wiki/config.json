@@ -68,7 +68,66 @@
         },
         { "id": "3.2", "name": "JARS" },
         { "id": "3.3", "name": "JDI" },
-        { "id": "3.4", "name": "JUTA" }
+        {
+          "id": "3.4",
+          "name": "JUTA",
+          "file": "jec-apis/juta/jec-juta",
+          "children": [
+            {
+              "id": "3.4.1",
+              "name": "Install",
+              "file": "jec-apis/juta/jec-juta-install"
+            },
+            {
+              "id": "3.4.2",
+              "name": "Quick Start",
+              "file": "jec-apis/juta/jec-juta-quickstart"
+            },
+            {
+              "id": "3.4.3",
+              "name": "JUTA Implementations",
+              "file": "jec-apis/juta/jec-juta-implementations"
+            },
+            {
+              "id": "3.4.4",
+              "name": "Usage and Idioms",
+              "children": [
+                {
+                  "id": "3.4.4.1",
+                  "name": "Assertions"
+                },
+                {
+                  "id": "3.4.4.2",
+                  "name": "Decorators"
+                },
+                {
+                  "id": "3.4.4.3",
+                  "name": "Test Fixtures"
+                },
+                {
+                  "id": "3.4.4.4",
+                  "name": "Asynchronous Testing"
+                },
+                {
+                  "id": "3.4.4.5",
+                  "name": "Ignoring Tests"
+                },
+                {
+                  "id": "3.4.4.6",
+                  "name": "Test Classes Instantiation Policy"
+                },
+                {
+                  "id": "3.4.4.7",
+                  "name": "Scenario Testing With JUTA"
+                },
+                {
+                  "id": "3.4.4.8",
+                  "name": "Working With Test Groups"
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
