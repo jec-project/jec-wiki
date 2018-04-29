@@ -9,4 +9,8 @@ export class NavigationService {
   public navigateTo(route:string):void {
     this._router.navigateByUrl(route);
   }
+
+  public gotToUrl(url: string): void {
+    document.location.href = url;
+  }
 }

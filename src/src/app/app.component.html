@@ -1,7 +1,8 @@
 <header>
   <mat-toolbar color="primary" class="mat-elevation-z6">
     <div class="button-row">
-      <button mat-button class="app-menu-button jec-link-button">
+      <button mat-button class="app-menu-button jec-link-button"
+              (click)="navigService.gotToUrl('http://jecproject.org');">
         <img alt="JEC Logo" src="./assets/img/jec-avatar-white.svg" />&nbsp;
         <span>JEC</span>
       </button>
@@ -9,11 +10,11 @@
       <button mat-button class="app-menu-button" (click)="navigService.navigateTo('/home');">Home</button>
       <button mat-button class="app-menu-button" (click)="navigService.navigateTo('/docs');">Documentation</button>
       <div class="flex-spacer"></div>
-      <button mat-button class="app-menu-button">
+      <button mat-button class="app-menu-button" (click)="navigService.gotToUrl('https://twitter.com/JEC_Project');">
         <img alt="Twitter" src="./assets/img/twitter-logo.svg" />&nbsp;
         <span>Twitter</span>
       </button>
-      <button mat-button class="app-menu-button">
+      <button mat-button class="app-menu-button" (click)="navigService.gotToUrl('https://github.com/pechemann');">
         <img alt="Github" src="./assets/img/github-logo.svg" />&nbsp;
         <span>Github</span>
       </button>
