@@ -6,15 +6,14 @@ import { RouteItem } from "./route-item.interface";
   templateUrl: "./breadcrumb.component.html"
 })
 export class BreadcrumbComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() public routeList: RouteItem[] = null;
+  @Output() public onChange: EventEmitter<RouteItem> = new EventEmitter<RouteItem>();
 
-  @Input() public routeList:RouteItem[] = null;
-  @Output() public onChange:EventEmitter<RouteItem> = new EventEmitter<RouteItem>();
+  public ngOnInit(): void {}
 
-  public ngOnInit():void { }
-
-  public anchorClickHandler(routeItem:RouteItem):void {
+  public anchorClickHandler(routeItem: RouteItem): void {
     this.onChange.emit(routeItem);
   }
 }
