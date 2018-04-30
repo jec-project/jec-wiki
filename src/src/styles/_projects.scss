@@ -30,9 +30,18 @@
   caret-color: #fff;
 }
 
-.projects-content .mat-grid-tile .mat-figure {
+.projects-content .project-table-cell {
   justify-content: left;
   margin: 0 2em;
+}
+
+.projects-content .project-label,
+.projects-content .project-table-cell button {
+  display: inline-block;
+}
+
+.projects-content .project-label {
+  padding: 1em;
 }
 
 /* Project info */
@@ -48,4 +57,18 @@
   color: $jec-purple;
   font-weight: bold;
   font-size: 1em;
+}
+
+.project-complete-row {
+  display: table;
+}
+
+.project-complete-row span{
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 1em;
+}
+
+.project-table-cell {
+  display: flex;
 }

@@ -15,16 +15,16 @@
         <div class="projects-table-header">
             <form class="example-form">
                 <mat-form-field class="example-full-width">
-                    <input type="search" matInput placeholder="Find a project..." />
+                    <input type="search" matInput placeholder="Find a project..." (input)="filterProjects($event.target.value)"/>
                     <mat-icon matSuffix>search</mat-icon>
                 </mat-form-field>
             </form>
         </div>
         <div class="projects-table-body">
-            <mat-grid-list cols="3" rowHeight="3em">
-                <mat-grid-tile *ngFor="let project of projects; let id = index">
-                    <div class="project-label">{{project.label}}</div>
-                    <div class="flex-spacer">&nbsp;</div>
+            <div class="project-table-content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left top">
+                <div class="project-table-cell" fxFlex="25" *ngFor="let project of projects; let id = index">
+                    <span class="project-label">{{project.label}}</span>
+                    <span class="flex-spacer">&nbsp;</span>
                     <button mat-button [mdePopoverTriggerFor]="id" mdePopoverTriggerOn="click">
                         <i class="material-icons">info_outline</i>
                     </button>
@@ -37,29 +37,29 @@
                                 <p>
                                     {{project.description}}
                                 </p>
-                                <p>
-                                    Complete:
+                                <p class="project-complete-row">
+                                    <span>Complete:</span>
                                     <img src="http://progressed.io/bar/{{project.progress}}" />
                                 </p>
                             </mat-card-content>
                             <mat-card-actions>
-                                <button mat-button>
+                                <button mat-button disabled>
                                     <i class="material-icons">list</i>
                                     Documentation
                                 </button>
-                                <button mat-button>
+                                <button mat-button disabled>
                                     <i class="material-icons">settings</i>
                                     API Reference
                                 </button>
-                                <button mat-button>
+                                <button mat-button (click)="navigateToGithub(project.label)">
                                     <img alt="Github" src="./assets/img/github-project-icon.svg">
                                     Github
                                 </button>
                             </mat-card-actions>
                         </mat-card>
                     </mde-popover>
-                </mat-grid-tile>
-            </mat-grid-list>
+                </div>
+            </div>
         </div>
     </div>
 </div>
