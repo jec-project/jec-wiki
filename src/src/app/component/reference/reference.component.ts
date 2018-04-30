@@ -50,8 +50,10 @@ export class ReferenceComponent extends AbstractViewComponent {
 
   public onActivate(event: any): void {
     const file: string = event.node.data.file;
-    this.setMdFileRef(file);
-    this._location.replaceState(this.ROOT_PATH + "/" + file);
+    if(file) {
+      this.setMdFileRef(file);
+      this._location.replaceState(this.ROOT_PATH + "/" + file);
+    }
   }
 
   private setMdFileRef(file: string): void {

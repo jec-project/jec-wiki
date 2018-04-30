@@ -55,6 +55,11 @@ tree-node:last-child > .tree-node > .tree-children::after {
     z-index: 1;
 }
 
+.node-content-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
 /* MdViewport component */
 .jec-md-viewport {
     position: absolute;
@@ -63,4 +68,9 @@ tree-node:last-child > .tree-node > .tree-children::after {
     bottom: 1.5em;
     right: 1em;
     overflow-y: auto;
+}
+
+.projects-explorer-btn {
+    width: 100%;
+    margin-bottom: 1em;
 }

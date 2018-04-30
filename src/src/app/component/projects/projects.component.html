@@ -1,11 +1,13 @@
 <div class="projects-content">
 
+    <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
+
     <div class="jec-jumbotron">
         <h1>
             Reference
         </h1>
         <p>
-            Here you'll find quick access to API and reference documentation for all JEC projects.
+            Here you will find quick access to API and reference documentation for all JEC projects.
         </p>
     </div>
 

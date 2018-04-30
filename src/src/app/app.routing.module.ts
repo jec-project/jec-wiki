@@ -17,8 +17,9 @@ import { CommunicationKitComponent } from "./component/communication-kit/communi
       { path: "docs", component: DocsComponent },
       { path: "docs/reference", component: ReferenceComponent,
       children: [
-        {path: '**', component: ReferenceComponent}
+        { path: "**", component: ReferenceComponent }
       ] },
+      
       { path: "docs/presentations", component: PresentationsComponent },
       { path: "docs/videos", component: VideosComponent },
       { path: "docs/communication-kit", component: CommunicationKitComponent },
