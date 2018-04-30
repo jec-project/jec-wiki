@@ -34,3 +34,18 @@
   justify-content: left;
   margin: 0 2em;
 }
+
+/* Project info */
+.cdk-overlay-container .mat-card {
+  background: $jec-component-background;
+}
+
+.project-card {
+  width: 25em;
+}
+
+.project-card .mat-card-title {
+  color: $jec-purple;
+  font-weight: bold;
+  font-size: 1em;
+}

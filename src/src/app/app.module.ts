@@ -13,6 +13,9 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 
+/* Angular Popover Module */
+import { MdePopoverModule } from '@material-extended/mde';
+
 /* Angular tree import */
 import { TreeModule } from "angular-tree-component";
 
@@ -64,6 +67,8 @@ import { CommunicationKitComponent } from "./component/communication-kit/communi
     MatIconModule,
     MatGridListModule,
     MatCardModule,
+    /* Angular Popover Module */
+    MdePopoverModule,
     /* Angular Tree Module */
     TreeModule,
     /* Routing Module */
