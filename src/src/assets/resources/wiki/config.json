@@ -91,14 +91,22 @@
             {
               "id": "3.4.4",
               "name": "Usage and Idioms",
+              "file": "jec-apis/juta/jec-juta-usage-and-idioms",
               "children": [
                 {
                   "id": "3.4.4.1",
-                  "name": "Assertions"
+                  "name": "Assertions",
+                  "file": "jec-apis/juta/assertions"
                 },
                 {
                   "id": "3.4.4.2",
-                  "name": "Decorators"
+                  "name": "@TestSuite",
+                  "file": "jec-apis/juta/testsuite-decorator"
+                },
+                {
+                  "id": "3.4.4.3",
+                  "name": "@Test",
+                  "file": "jec-apis/juta/test-decorator"
                 },
                 {
                   "id": "3.4.4.3",

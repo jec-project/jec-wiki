@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import * as MarkdownIt from "markdown-it";
-import * as hljs  from "highlight.js";
+import * as showdown from "showdown";
+import * as showdownHighlight from "showdown-highlight";
 
 @Injectable()
 export class JecMarkdownService {
@@ -9,22 +9,17 @@ export class JecMarkdownService {
     this.init();
   }
 
-  private _markdownIt: any = null;
+  private _converter: showdown.Converter = null;
 
   private init(): void {
-    this._markdownIt = MarkdownIt().set({
-      highlight: (str: string, lang: string) => {
-        if (lang && hljs.getLanguage(lang)) {
-          try {
-            return hljs.highlight(lang, str).value;
-          } catch (e) {}
-        }
-        return ""; // use external default escaping
-      }
+    this._converter = new showdown.Converter({
+      tables: true,
+      ghCompatibleHeaderId: true,
+      extensions: [showdownHighlight]
     });
   }
 
   public process(markdown: string): string {
-    return this._markdownIt.render(markdown);
+    return this._converter.makeHtml(markdown);
   }
 }

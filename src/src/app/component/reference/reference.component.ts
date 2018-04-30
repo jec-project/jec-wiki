@@ -30,7 +30,11 @@ export class ReferenceComponent extends AbstractViewComponent {
 
   private readonly ROOT_PATH: string = "/docs/reference";
 
+  private readonly ANCHOR: string = "#";
+
   private _treeDataMap: Map<string, any> = new Map<string, any>();
+
+  private _anchor: string = null;
 
   public ngOnInit(): void {
     this.routeList = [
@@ -52,7 +56,16 @@ export class ReferenceComponent extends AbstractViewComponent {
     const file: string = event.node.data.file;
     if(file) {
       this.setMdFileRef(file);
-      this._location.replaceState(this.ROOT_PATH + "/" + file);
+      let path: string = this.ROOT_PATH + "/" + file;
+      if(this._anchor) path += this.ANCHOR + this._anchor;
+      this._location.replaceState(path);
+    }
+  }
+
+  public onRendered(event: any): void {
+    if(this._anchor !== null) {
+      document.getElementById(this._anchor).scrollIntoView();
+      this._anchor = null;
     }
   }
 
@@ -80,8 +93,10 @@ export class ReferenceComponent extends AbstractViewComponent {
   }
 
   private navigate(route: string): void {
-    const pageRef: string = this.extractPageRoute(route);
-    const item: any = this._treeDataMap.get(pageRef);
+    let pageRef: string = this.extractPageRoute(route);
+    const test: string[] = pageRef.split(this.ANCHOR);
+    this._anchor = test[1];
+    const item: any = this._treeDataMap.get(test[0]);
     if(item) {
       this.setMdFileRef(item.file);
       this.navTree.treeModel.getNodeById(item.id)

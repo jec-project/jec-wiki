@@ -14,8 +14,7 @@
         <span [ngClass]="{'node-content-disabled': node.data.file === undefined}" [class.title]="true">{{ node.data.name }}</span>
       </ng-template>
     </tree-root>
-
   </div>
 
-  <jec-md-viewport [reference]="mdFileRef"></jec-md-viewport>
+  <jec-md-viewport [reference]="mdFileRef" (rendered)="onRendered($event)"></jec-md-viewport>
 </div>

@@ -39,6 +39,9 @@ import { JecMarkdownService } from "./service/jec-markdown.service";
 import { VideosComponent } from "./component/videos/videos.component";
 import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
 
+/* Utils */
+import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +54,9 @@ import { CommunicationKitComponent } from "./component/communication-kit/communi
     MdViewportComponent,
     PresentationsComponent,
     VideosComponent,
-    CommunicationKitComponent
+    CommunicationKitComponent,
+
+    SanitizeHtmlPipe
   ],
   imports: [
     /* Angular Module */
