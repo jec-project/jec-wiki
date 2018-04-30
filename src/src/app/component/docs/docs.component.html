@@ -1,0 +1,133 @@
+<div class="docs-content">
+
+    <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
+
+    <div class="jec-jumbotron mat-elevation-z2">
+        <h1>
+            Documentation
+        </h1>
+        <p>
+            Here you will find all the documentation and tutorials written by the JEC team.
+        </p>
+    </div>
+
+    <mat-card class="docs-card">
+        <div class="docs-icon-wrapper">
+            <mat-icon class="docs-icon">library_books</mat-icon>
+        </div>
+        <mat-card-header>
+            <mat-card-title>Reference Documentation</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                This section includes the reference documentation for the JEC APIs, CLIs and implementations.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="navigService.navigateTo('/docs/reference');">
+                Read the Reference Documentation
+                <i class="material-icons">navigate_next</i>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="docs-card">
+        <div class="docs-icon-wrapper">
+            <mat-icon class="docs-icon">explore</mat-icon>
+        </div>
+        <mat-card-header>
+            <mat-card-title>Explore</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Easily access to all JEC projects, API reference and documentation.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="navigService.navigateTo('/docs/projects');">
+                Explore JEC Projects
+                <i class="material-icons">navigate_next</i>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="docs-card">
+        <div class="docs-icon-wrapper">
+            <mat-icon class="docs-icon">video_library</mat-icon>
+        </div>
+        <mat-card-header>
+            <mat-card-title>Videos</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Learn how to easily create and deploy microservices and Web apps with JEC and the GlassCat server.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="navigService.navigateTo('/docs/videos');">
+                Watch JEC Videos
+                <i class="material-icons">navigate_next</i>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="docs-card disabled">
+        <div class="docs-icon-wrapper">
+            <mat-icon class="docs-icon">build</mat-icon>
+        </div>
+        <mat-card-header>
+            <mat-card-title>Guides</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                The JEC Guides section teaches and demonstrates the JEC features that are used to develop enterprise applications.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button disabled>
+                Try one of the Guides
+                <i class="material-icons">navigate_next</i>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="docs-card">
+        <div class="docs-icon-wrapper">
+            <mat-icon class="docs-icon">slideshow</mat-icon>
+        </div>
+        <mat-card-header>
+            <mat-card-title>Presentations</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                The JEC Presentations section contains all of the presentations and articles written by the JEC team.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="navigService.navigateTo('/docs/presentations');">
+                Download JEC Official Presentations
+                <i class="material-icons">navigate_next</i>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="docs-card">
+        <div class="docs-icon-wrapper">
+            <mat-icon class="docs-icon">photo_library</mat-icon>
+        </div>
+        <mat-card-header>
+            <mat-card-title>Communication Kit</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Download JEC logos and banners from our communication kit to communicate about JEC projects towards your network.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="navigService.navigateTo('/docs/communication-kit');">
+                Get the JEC Communication Kit
+                <i class="material-icons">navigate_next</i>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
