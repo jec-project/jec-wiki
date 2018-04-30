@@ -67,7 +67,7 @@ footer {
   display: flex;
 }
 
-.footer-version {
+.footer-center-section {
   flex: 1;
   text-align: center;
   line-height: 5em;
@@ -75,7 +75,7 @@ footer {
 
 .footer-copyright {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   line-height: 1.4em;
@@ -155,4 +155,16 @@ footer {
 .mat-button.mat-accent[disabled], .mat-button.mat-primary[disabled], .mat-button.mat-warn[disabled], .mat-button[disabled][disabled], .mat-icon-button.mat-accent[disabled], .mat-icon-button.mat-primary[disabled], .mat-icon-button.mat-warn[disabled], .mat-icon-button[disabled][disabled], .mat-stroked-button.mat-accent[disabled], .mat-stroked-button.mat-primary[disabled], .mat-stroked-button.mat-warn[disabled], .mat-stroked-button[disabled][disabled] {
   color: unset;
   opacity: 0.25;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .mobile-secondary,
+  .app-menu-button.mobile-secondary.mat-button {
+    display: none;
+  }
+
+  .main-content {
+    bottom: 0.5em;
+  }
 }
