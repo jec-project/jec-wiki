@@ -15,7 +15,8 @@
    * [`@Before`](./docs/reference/jec-apis/juta/test-fixtures#before-decorator)
    * [`@After`](./docs/reference/jec-apis/juta/test-fixtures#after-decorator)
 * [Asynchronous Testing](./docs/reference/jec-apis/juta/asynchronous-testing)
-* [Ignoring Tests](./docs/reference/jec-apis/juta/ignoring-Tests)
+* [Ignoring Tests](./docs/reference/jec-apis/juta/ignoring-tests)
 * [Test Classes Instantiation Policy](./docs/reference/jec-apis/juta/test-classes-instantiation-policy)
-* Scenario Testing With JUTA
-* Working With Test Groups
+* [Scenario Testing With JUTA](./docs/reference/jec-apis/juta/scenario-testing-with-juta)
+* [Working With Test Groups](./docs/reference/jec-apis/juta/working-with-test-groups)
+

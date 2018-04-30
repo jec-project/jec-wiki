@@ -15,6 +15,7 @@ export class JecMarkdownService {
     this._converter = new showdown.Converter({
       tables: true,
       ghCompatibleHeaderId: true,
+      disableForced4SpacesIndentedSublists: true,
       extensions: [showdownHighlight]
     });
   }
