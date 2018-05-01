@@ -32,9 +32,13 @@ export class ReferenceComponent extends AbstractViewComponent {
 
   private readonly ANCHOR: string = "#";
 
+  private readonly SLASH: string = "/";
+
   private _treeDataMap: Map<string, any> = new Map<string, any>();
 
   private _anchor: string = null;
+
+  private _lastFilePath: string = null;
 
   public ngOnInit(): void {
     this.routeList = [
@@ -54,11 +58,21 @@ export class ReferenceComponent extends AbstractViewComponent {
 
   public onActivate(event: any): void {
     const file: string = event.node.data.file;
+    const node: any = this.navTree.treeModel.getNodeById(event.node.id);
     if(file) {
-      this.setMdFileRef(file);
-      let path: string = this.ROOT_PATH + "/" + file;
+      let path: string = this.ROOT_PATH + this.SLASH + file;
       if(this._anchor) path += this.ANCHOR + this._anchor;
-      this._location.replaceState(path);
+      if(this._lastFilePath !== path) {
+        this._lastFilePath = path;
+        this.setMdFileRef(file);
+        this._location.replaceState(path);
+      }
+    }
+    if(!node.isActive) {
+      node.toggleActivated();
+    }
+    if(!node.isExpanded) {
+      node.toggleExpanded().ensureVisible();
     }
   }
 
