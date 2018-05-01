@@ -43,11 +43,11 @@
                                 </p>
                             </mat-card-content>
                             <mat-card-actions>
-                                <button mat-button disabled>
+                                <button mat-button [disabled]="getDisabledStatus(project.docRef)" (click)="navigateToDocRef(project.docRef)">
                                     <i class="material-icons">list</i>
                                     Documentation
                                 </button>
-                                <button mat-button disabled>
+                                <button mat-button [disabled]="getDisabledStatus(project.apiRef)" (click)="navigateToApiRef(project.apiRef)">
                                     <i class="material-icons">settings</i>
                                     API Reference
                                 </button>
