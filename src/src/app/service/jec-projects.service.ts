@@ -9,6 +9,7 @@ export class JecProjectsService {
   public getData(): Observable<any> {
     const result: any = {
       projects: [
+        { label: "JEC", description: "Solely contains presentation documents related to the JEC project.", progress: 100 },
         { label: "jec-wiki", description: "The official JEC wiki repository.", progress: 60 },
         { label: "jec-website", description: "The official JEC Website repository.", progress: 100 },
         { label: "jec-app-samples", description: "A collection of sample Enterprise JavaScript Projects (EJPs) that can be deployed in GlassCat application servers.", progress: 100 },

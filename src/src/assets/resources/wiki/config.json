@@ -3,37 +3,37 @@
     {
       "id": "1",
       "name": "JEC Reference",
-      "file": "jec-reference",
+      "file": "jec-reference/jec-reference",
       "children": [
         {
           "id": "1.1",
           "name": "About these Docs",
-          "file": "jec/about-jec-documentation"
+          "file": "jec-reference/about-jec-documentation"
         },
         {
           "id": "1.2",
           "name": "List of JEC Projects Repositories",
-          "file": "jec/list-of-jec-projects-repositories"
+          "file": "jec-reference/list-of-jec-projects-repositories"
         },
         {
           "id": "1.3",
           "name": "JEC Publications",
-          "file": "jec/jec-publications"
+          "file": "jec-reference/jec-publications"
         },
         {
           "id": "1.1000",
           "name": "Roadmap",
-          "file": "jec/jec-roadmap",
+          "file": "jec-reference/jec-roadmap",
           "children": [
             {
               "id": "1.1001",
               "name": "Projects Progress",
-              "file": "jec/jec-projects-progress"
+              "file": "jec-reference/jec-projects-progress"
             },
             {
               "id": "1.1002",
               "name": "JEC Projects TODOS",
-              "file": "jec/jec-projects-todos"
+              "file": "jec-reference/jec-projects-todos"
             }
           ]
         }
@@ -45,8 +45,14 @@
       "file": "jec-spec/jec-at-glance",
       "children": [
         {
+          "id": "2.0",
+          "name": "What is JEC?",
+          "file": "jec-spec/what-is-jec"
+        },
+        {
           "id": "2.1",
           "name": "JEC Projects Architecture",
+          "file": "jec-spec/jec-projects-architecture",
           "children": [
             { "id": "2.1.1", "name": "Domain Representation" },
             { "id": "2.1.2", "name": "Enterprise JavaScript Project (EJP)" }
@@ -160,7 +166,7 @@
     {
       "id": "7",
       "name": "Partners and Sponsors List",
-      "file": "jec/jec-partners-and-sponsors-list"
+      "file": "jec-reference/jec-partners-and-sponsors-list"
     }
   ]
 }

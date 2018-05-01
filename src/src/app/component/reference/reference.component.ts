@@ -92,7 +92,7 @@ export class ReferenceComponent extends AbstractViewComponent {
     if(route !== this.ROOT_PATH) {
       result = route.substr(16);
     } else {
-      result = "jec-reference";
+      result = "jec-reference/jec-reference";
     }
     return result;
   }
