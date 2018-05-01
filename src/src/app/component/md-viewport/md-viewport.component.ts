@@ -8,11 +8,13 @@ import { JecMarkdownService } from "../../service/jec-markdown.service";
 })
 export class MdViewportComponent {
 
-  @Output() rendered: EventEmitter<string> = new EventEmitter<string>();
+  @Output() public rendered: EventEmitter<string> = new EventEmitter<string>();
+
+  @Input() public filesPath: string = "";
 
   @Input() public set reference(value: string) {
     if(value) {
-      const mdFilePath: string = `assets/resources/wiki/pages/${value}.md`;
+      const mdFilePath: string = `${this.filesPath}/${value}.md`;
       this._http.get(mdFilePath, MdViewportComponent.RESPONS_TYPE).subscribe(result => {
         this.textContent = this._markdown.process(result.toString());
         setTimeout(()=> {

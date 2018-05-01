@@ -157,6 +157,28 @@ footer {
   opacity: 0.25;
 }
 
+
+/* Tree component styles */
+.tree-component-wrapper {
+  background: $jec-component-background;
+  position: absolute;
+  width: 15em;
+  top: 6em;
+  bottom: 1.5em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+/* MdViewport component */
+.jec-md-viewport {
+  position: absolute;
+  left: 19em;
+  top: 6em;
+  bottom: 1.5em;
+  right: 1em;
+  overflow-y: auto;
+}
+
 @media only screen and (max-width: 480px) {
 
   .mobile-secondary,

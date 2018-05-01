@@ -27,17 +27,19 @@ import { DocsComponent } from "./component/docs/docs.component";
 import { ReferenceComponent } from "./component/reference/reference.component";
 import { ProjectsComponent } from "./component/projects/projects.component";
 import { AbstractViewComponent } from "./component/core/abstract-view.component";
-import { PresentationsComponent } from "./component/presentations/presentations.component";
 import { MdViewportComponent } from "./component/md-viewport/md-viewport.component";
+import { PresentationsComponent } from "./component/presentations/presentations.component";
 import { BreadcrumbComponent } from "./component/breadcrumb/breadcrumb.component";
+import { VideosComponent } from "./component/videos/videos.component";
+import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
+import { CommunityComponent } from "./component/community/community.component";
 
 /* App services imports */
 import { JecProjectsService } from "./service/jec-projects.service";
 import { NavigationService } from "./service/navigation.service";
 import { JecReferenceMenuService } from "./service/jec-reference-menu.service";
+import { JecCommunityMenuService } from "./service/jec-community-menu.service";
 import { JecMarkdownService } from "./service/jec-markdown.service";
-import { VideosComponent } from "./component/videos/videos.component";
-import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
 
 /* Utils */
 import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
@@ -48,11 +50,12 @@ import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
     HomeComponent,
     DocsComponent,
     ReferenceComponent,
+    CommunityComponent,
     ProjectsComponent,
+    PresentationsComponent,
     NotFoundComponent,
     BreadcrumbComponent,
     MdViewportComponent,
-    PresentationsComponent,
     VideosComponent,
     CommunicationKitComponent,
 
@@ -81,7 +84,8 @@ import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
     JecProjectsService,
     NavigationService,
     JecReferenceMenuService,
-    JecMarkdownService
+    JecMarkdownService,
+    JecCommunityMenuService
   ],
   bootstrap: [AppComponent]
 })

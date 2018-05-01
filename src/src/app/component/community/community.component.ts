@@ -1,19 +1,19 @@
 import { Component, ViewChild } from "@angular/core";
 import { NavigationService } from "../../service/navigation.service";
-import { JecReferenceMenuService } from "../../service/jec-reference-menu.service";
+import { JecCommunityMenuService } from "../../service/jec-community-menu.service";
 import { AbstractViewComponent } from "../core/abstract-view.component";
 import { TreeComponent } from "angular-tree-component";
 import { Router } from "@angular/router";
 import { Location } from "@angular/common";
 
 @Component({
-  selector: "app-reference",
-  templateUrl: "./reference.component.html"
+  selector: "app-community",
+  templateUrl: "./community.component.html"
 })
-export class ReferenceComponent extends AbstractViewComponent {
+export class CommunityComponent extends AbstractViewComponent {
 
   constructor(navigService: NavigationService,
-              private _referenceMenuService: JecReferenceMenuService,
+              private _communityMenuService: JecCommunityMenuService,
               private _router: Router,
               private _navigService:NavigationService,
               private _location: Location) {
@@ -28,7 +28,7 @@ export class ReferenceComponent extends AbstractViewComponent {
 
   public mdFileRef: string = null;
 
-  private readonly ROOT_PATH: string = "/docs/reference";
+  private readonly ROOT_PATH: string = "/community";
 
   private readonly ANCHOR: string = "#";
 
@@ -43,11 +43,10 @@ export class ReferenceComponent extends AbstractViewComponent {
   public ngOnInit(): void {
     this.routeList = [
       { label: "Home", route: "home" },
-      { label: "Documentation", route: "docs" },
-      { label: "Reference", route: "docs/reference" }
+      { label: "Community", route: "community" }
     ];
     
-    this._referenceMenuService.getData().subscribe(result => {
+    this._communityMenuService.getData().subscribe(result => {
       this.treeData = result.data;
       this.flatten(this.treeData);
       setTimeout(()=> {
@@ -90,9 +89,9 @@ export class ReferenceComponent extends AbstractViewComponent {
   private extractPageRoute(route: string): string {
     let result: string = this.ROOT_PATH;
     if(route !== this.ROOT_PATH) {
-      result = route.substr(16);
+      result = route.substr(11);
     } else {
-      result = "jec-reference/jec-reference";
+      result = "jec-community";
     }
     return result;
   }
@@ -108,9 +107,9 @@ export class ReferenceComponent extends AbstractViewComponent {
 
   private navigate(route: string): void {
     let pageRef: string = this.extractPageRoute(route);
-    const test: string[] = pageRef.split(this.ANCHOR);
-    this._anchor = test[1];
-    const item: any = this._treeDataMap.get(test[0]);
+    const routeMap: string[] = pageRef.split(this.ANCHOR);
+    this._anchor = routeMap[1];
+    const item: any = this._treeDataMap.get(routeMap[0]);
     if(item) {
       this.setMdFileRef(item.file);
       this.navTree.treeModel.getNodeById(item.id)
