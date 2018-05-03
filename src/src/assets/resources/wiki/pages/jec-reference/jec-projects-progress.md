@@ -1,6 +1,6 @@
 # JEC Projects Progress
 
-To get a description of the following projects, please refer to the [List of JEC Projects Repositories](./docs/reference/jec/list-of-jec-projects-repositories) section.
+To get a description of the following projects, please refer to the [List of JEC Projects Repositories](./docs/reference/jec-reference/list-of-jec-projects-repositories) section.
 
 | Project            | Progress                                  | Status |
 | ------------------ | :---------------------------------------: | :-------: |
