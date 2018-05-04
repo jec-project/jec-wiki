@@ -11,4 +11,4 @@ JEC provides an easy-to-use infrastructure to TypeScript and JavaScript develope
 - an effective solution for JavaScript apps scalability 
 - an isomorphic approach for building microservices and Angular apps
 
-[jec-logo]: https://raw.githubusercontent.com/pechemann/JEC/master/assets/jec-logos/jec-logo.png?style=jec-main-logo
+[jec-logo]: https://raw.githubusercontent.com/jec-project/JEC/master/assets/jec-logos/jec-logo.png?style=jec-main-logo

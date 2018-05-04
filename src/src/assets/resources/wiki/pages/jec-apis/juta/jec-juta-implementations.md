@@ -11,4 +11,4 @@ The following table contains the list of available JUTA implementations, with th
 
 | Name | Description | Project Page | Unit Testing Framework |
 | --- | --- | --- | --- |
-| Tiger | The default implementation of the specification JUTA | [jec-tiger](https://github.com/pechemann/jec-tiger) | [Mocha.js](https://mochajs.org/) |
+| Tiger | The default implementation of the specification JUTA | [jec-tiger](https://github.com/jec-project/jec-tiger) | [Mocha.js](https://mochajs.org/) |

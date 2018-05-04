@@ -40,7 +40,7 @@ export class PresentationsComponent extends AbstractViewComponent implements Aft
   }
 
   public downloadPdf(item: string): void {
-    const pdfUrl: string = `https://github.com/pechemann/JEC/raw/master/presentations/${item}.pdf`;
+    const pdfUrl: string = `https://github.com/jec-project/JEC/raw/master/presentations/${item}.pdf`;
     window.location.href = pdfUrl;
   }
 }

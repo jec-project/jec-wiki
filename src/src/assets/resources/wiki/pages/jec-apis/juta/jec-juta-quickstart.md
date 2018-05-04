@@ -88,14 +88,14 @@ Compile the test; the TypeScript compiler creates a file `CalculatorTest.js`.
 
 ## Run the test
 
-Before running tests, you must install a JUTA implemetation, such as [Tiger](https://github.com/pechemann/jec-tiger).
+Before running tests, you must install a JUTA implemetation, such as [Tiger](https://github.com/jec-project/jec-tiger).
 
 ```bash
 $ npm install jec-tiger --save-dev
 $ npm install mocha --save-dev
 ```
 
-Once you have [installed the JUTA implementation](https://github.com/pechemann/jec-tiger#tiger-framework-initialization), run the test from the command line.
+Once you have [installed the JUTA implementation](https://github.com/jec-project/jec-tiger#tiger-framework-initialization), run the test from the command line.
 
 ```bash
 $ npm test

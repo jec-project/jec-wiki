@@ -44,7 +44,7 @@ export class ProjectsComponent extends AbstractViewComponent {
   }
 
   public navigateToGithub(project: string): void {
-    this.navigService.gotToUrl("https://github.com/pechemann/" + project);
+    this.navigService.gotToUrl("https://github.com/jec-project/" + project);
   }
 
   public navigateToDocRef(docRef: string): void {
