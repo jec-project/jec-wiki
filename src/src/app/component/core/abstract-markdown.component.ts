@@ -114,9 +114,9 @@ export class AbstractMarkdownComponent extends AbstractViewComponent {
     if(item) {
       this.setMdFileRef(item.file);
       this.navTree.treeModel.getNodeById(item.id)
-                            .toggleActivated()
                             .toggleExpanded()
-                            .ensureVisible();
+                            .ensureVisible()
+                            .toggleActivated();
     } else {
       this.navigService.navigateTo("/not-found");
     }
