@@ -3,9 +3,10 @@ import { Observable } from "rxjs";
 import "rxjs/add/observable/of";
 import { HttpClient } from "@angular/common/http";
 import { environment } from '../../environments/environment';
+import { MenuService } from "./menu.service";
 
 @Injectable()
-export class JecReferenceMenuService {
+export class JecReferenceMenuService implements MenuService {
 
   constructor(private _http: HttpClient) { }
 

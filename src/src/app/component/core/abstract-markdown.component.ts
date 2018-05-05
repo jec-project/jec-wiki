@@ -5,6 +5,7 @@ import { TreeComponent } from "angular-tree-component";
 import { Router } from "@angular/router";
 import { Location } from "@angular/common";
 import { environment } from '../../../environments/environment';
+import { MenuService } from "../../service/menu.service";
 
 export class AbstractMarkdownComponent extends AbstractViewComponent {
 
@@ -12,7 +13,7 @@ export class AbstractMarkdownComponent extends AbstractViewComponent {
               rootPath: string,
               defaultPage: string,
               navigService: NavigationService,
-              private _menuService: any,
+              private _menuService: MenuService,
               private _router: Router,
               private _location: Location) {
     super(navigService);
