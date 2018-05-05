@@ -44,4 +44,4 @@ testem.log
 Thumbs.db
 
 # Data Source Files
-/assets/resources
+src/assets/resources
