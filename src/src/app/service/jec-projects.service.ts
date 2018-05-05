@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs/Observable";
-import "rxjs/add/observable/of";
+import { Observable, of } from "rxjs";
 
 @Injectable()
 export class JecProjectsService {
@@ -55,6 +54,6 @@ export class JecProjectsService {
       }
       return 0;
     });
-    return Observable.of(result);
+    return of(result);
   }
 }

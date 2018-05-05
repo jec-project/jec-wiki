@@ -5,6 +5,7 @@ import { AbstractViewComponent } from "../core/abstract-view.component";
 import { TreeComponent } from "angular-tree-component";
 import { Router } from "@angular/router";
 import { Location } from "@angular/common";
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: "app-community",
@@ -21,6 +22,8 @@ export class CommunityComponent extends AbstractViewComponent {
   }
 
   @ViewChild("navTree") public navTree: TreeComponent;
+
+  public filesPath: string = environment.dataSource + "resources/community/pages";
 
   public treeData: any[] = null;
 
@@ -106,7 +109,7 @@ export class CommunityComponent extends AbstractViewComponent {
   }
 
   private navigate(route: string): void {
-    let pageRef: string = this.extractPageRoute(route);
+    const pageRef: string = this.extractPageRoute(route);
     const routeMap: string[] = pageRef.split(this.ANCHOR);
     this._anchor = routeMap[1];
     const item: any = this._treeDataMap.get(routeMap[0]);

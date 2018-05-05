@@ -5,6 +5,7 @@ import { AbstractViewComponent } from "../core/abstract-view.component";
 import { TreeComponent } from "angular-tree-component";
 import { Router } from "@angular/router";
 import { Location } from "@angular/common";
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: "app-reference",
@@ -21,6 +22,8 @@ export class ReferenceComponent extends AbstractViewComponent {
   }
 
   @ViewChild("navTree") public navTree: TreeComponent;
+
+  public filesPath: string = environment.dataSource + "resources/wiki/pages";
 
   public treeData: any[] = null;
 

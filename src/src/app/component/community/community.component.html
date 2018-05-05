@@ -10,7 +10,7 @@
     </tree-root>
   </div>
 
-  <jec-md-viewport filesPath="assets/resources/community/pages"
+  <jec-md-viewport [filesPath]="filesPath"
                    [reference]="mdFileRef"
                    (rendered)="onRendered($event)"></jec-md-viewport>
 </div>
