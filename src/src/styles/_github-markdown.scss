@@ -689,8 +689,17 @@
   border-bottom-color: #eee;
 }
 
-
 /* additional JRC styles */
+
+.markdown-body details {
+  border-bottom: thin solid #eee;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+  margin-bottom: 0.7em;
+}
 
 img[src$="jec-main-logo"] {
   display: block;
