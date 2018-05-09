@@ -1,14 +1,11 @@
 import { Injectable } from "@angular/core";
-import { Observable, of } from "rxjs";
 import { HttpClient } from "@angular/common/http";
-import { environment } from '../../environments/environment';
+import { AbstractMenuService } from "./AbstractMenuService";
 
 @Injectable()
-export class JecProjectsService {
+export class JecProjectsService extends AbstractMenuService {
   
-  constructor(private _http: HttpClient) {}
-
-  public getData(): Observable<any> {
-    return this._http.get<any>(environment.dataSource + "resources/projects/config.json");
+  constructor(http: HttpClient) {
+    super(http, "resources/projects");
   }
 }
