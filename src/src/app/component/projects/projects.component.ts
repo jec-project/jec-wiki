@@ -52,7 +52,7 @@ export class ProjectsComponent extends AbstractViewComponent {
   }
 
   public navigateToApiRef(apiRef: string): void {
-    this.navigService.gotToUrl("./docs/" + apiRef);
+    this.navigService.gotToUrl(`http://jecproject.org/docs/${apiRef}/api/`);
   }
 
   public getDisabledStatus(ref: string): boolean {
