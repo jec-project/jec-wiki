@@ -51,7 +51,9 @@ export class ProjectsComponent extends AbstractViewComponent {
     this.navigService.gotToUrl("./docs/reference/" + docRef);
   }
 
-  public navigateToApiRef(apiRef: string): void { }
+  public navigateToApiRef(apiRef: string): void {
+    this.navigService.gotToUrl("./docs/" + apiRef);
+  }
 
   public getDisabledStatus(ref: string): boolean {
     return (ref === null || ref === undefined || ref === "") ? true : false;
