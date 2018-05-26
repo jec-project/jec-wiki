@@ -33,6 +33,8 @@ import { BreadcrumbComponent } from "./component/breadcrumb/breadcrumb.component
 import { VideosComponent } from "./component/videos/videos.component";
 import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
 import { CommunityComponent } from "./component/community/community.component";
+import { ArticlesComponent } from "./component/articles/articles.component";
+import { ArticleComponent } from "./component/article/article.component";
 
 /* App services imports */
 import { JecProjectsService } from "./service/jec-projects.service";
@@ -40,6 +42,7 @@ import { NavigationService } from "./service/navigation.service";
 import { JecReferenceMenuService } from "./service/jec-reference-menu.service";
 import { JecCommunityMenuService } from "./service/jec-community-menu.service";
 import { JecMarkdownService } from "./service/jec-markdown.service";
+import { JecArticlesService } from "./service/jec-articles.service";
 
 /* Utils */
 import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
@@ -58,7 +61,8 @@ import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
     MdViewportComponent,
     VideosComponent,
     CommunicationKitComponent,
-
+    ArticlesComponent,
+    ArticleComponent,
     SanitizeHtmlPipe
   ],
   imports: [
@@ -85,7 +89,8 @@ import { SanitizeHtmlPipe } from "./pipe/sanitize-html.pipe";
     NavigationService,
     JecReferenceMenuService,
     JecMarkdownService,
-    JecCommunityMenuService
+    JecCommunityMenuService,
+    JecArticlesService
   ],
   bootstrap: [AppComponent]
 })

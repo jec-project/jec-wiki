@@ -1,0 +1,25 @@
+<div class="articles-content">
+
+  <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
+
+  <div class="jec-jumbotron mat-elevation-z2">
+    <h1>
+      Articles
+    </h1>
+    <p>
+      Here you'll find all archived articles written by the JEC team.
+    </p>
+  </div>
+
+  <h2>Tech Articles on JEC</h2>
+
+  <ul class="tech-links">
+    <li class="jec-badge mat-elevation-z2" *ngFor="let article of articles">
+      <a class="jec-link" 
+         title="article.title"
+         [routerLink]="[article.ref]">
+         {{article.title}} <em>({{article.site}})</em>
+      </a>
+    </li>
+  </ul>
+</div>

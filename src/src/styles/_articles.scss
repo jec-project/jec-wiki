@@ -1,0 +1,32 @@
+.articles-content,
+.article-content {
+    width: 100%;
+    height: 100%;
+}
+
+.articles-content h2 {
+    margin: 2em 0 1em 0;
+}
+
+.tech-links {
+    margin-bottom: 3em;
+}
+
+.tech-links li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.article-content .jec-md-viewport {
+    left: 1em;
+}
+
+.article-permalink {
+    font-size: 0.8em;
+}
+
+.article-permalink li span {
+    display: inline-block;
+    width: 10em;
+    font-style: italic;
+}

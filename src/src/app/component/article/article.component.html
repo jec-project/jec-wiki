@@ -1,0 +1,8 @@
+<div class="article-content">
+
+  <jec-breadcrumb [routeList]="routeList" (onChange)="breadcrumbChangeHandler($event)"></jec-breadcrumb>
+
+  <jec-md-viewport [filesPath]="filesPath"
+                   [reference]="mdFileRef"
+                   (rendered)="onRendered($event)"></jec-md-viewport>
+</div>

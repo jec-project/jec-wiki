@@ -9,6 +9,8 @@ import { VideosComponent } from "./component/videos/videos.component";
 import { CommunicationKitComponent } from "./component/communication-kit/communication-kit.component";
 import { PresentationsComponent } from "./component/presentations/presentations.component";
 import { CommunityComponent } from "./component/community/community.component";
+import { ArticlesComponent } from "./component/articles/articles.component";
+import { ArticleComponent } from "./component/article/article.component";
 
 @NgModule({
   imports: [
@@ -27,6 +29,8 @@ import { CommunityComponent } from "./component/community/community.component";
         ]
       },
       { path: "docs/presentations", component: PresentationsComponent },
+      { path: "docs/articles", component: ArticlesComponent },
+      { path: "docs/articles/:id", component: ArticleComponent },
       { path: "docs/videos", component: VideosComponent },
       { path: "docs/communication-kit", component: CommunicationKitComponent },
       { path: "docs/projects", component: ProjectsComponent },
