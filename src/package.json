@@ -1,11 +1,12 @@
 {
   "name": "webapp",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "1.0.0",
+  "author": "Pascal ECHEMANN",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --deploy-url \"/wiki/\" -bh \"/wiki/\"",
+    "build": "ng build --prod --deploy-url /wiki/ --base-href /wiki/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

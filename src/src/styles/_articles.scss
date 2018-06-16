@@ -14,7 +14,7 @@
 
 .tech-links li {
     list-style: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .article-content .jec-md-viewport {
@@ -29,4 +29,9 @@
     display: inline-block;
     width: 10em;
     font-style: italic;
+}
+
+.tech-links .jec-link i {
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
